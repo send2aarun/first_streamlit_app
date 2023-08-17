@@ -1,4 +1,4 @@
-iimport streamlit
+import streamlit
 import pandas
 import requests
 
