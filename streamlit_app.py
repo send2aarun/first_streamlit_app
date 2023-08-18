@@ -32,12 +32,11 @@ streamlit.header("Fruityvice Fruit Advice!")
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
-    streamlit.error("Please select a fruit to get information. ")
-    
+    streamlit.error("Please select a fruit to get information.")
   else:
-    back_from_function = get_fruityvice_data (fruit_choice)
-    streamlit.dataframe(back_from_function)
-    
+       back_from_function = get_fruityvice_data(fruit_choice)
+       streamlit.dataframe(back_from_function)
+         
 # streamlit.stop()
 
 
@@ -73,4 +72,3 @@ try:
 # # streamlit.write('The user entered ', fruit_choice2)
 # streamlit.write('Thanks for adding ', fruit_choice2)
 # my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
-
